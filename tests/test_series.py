@@ -1,5 +1,5 @@
 from math_series.series import __version__
-from math_series.series import fibonacci , lucas
+from math_series.series import fibonacci, lucas
 
 
 def test_version():
@@ -11,6 +11,7 @@ def test_fibonacci():
     expected = [0, 1, 1, 2, 3, 5, 8, 13, "wrong input"]
     actual = [fibonacci(i) for i in input]
     assert expected == actual
+
 
 def test_lucas():
     input = [0, 1, 2, 3, 4, 5, 6, 7, -2]
